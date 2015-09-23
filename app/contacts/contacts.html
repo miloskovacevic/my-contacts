@@ -1,9 +1,11 @@
 <div class="row" ng-controller="ContactsCtrl">
+    <div class="large-10 columns">
+        <div data-alert ng-show="msg"  class="alert-box">{{msg}}</div>
     <form ng-submit="addFormSubmit()" ng-show="addFormShow">
         <h1>Add Contact</h1>
         <div class="row">
             <div class="large-6 columns">
-                <label>Name:
+                <label>Name
                     <input type="text" ng-model="name" placeholder="Contact Name" required />
                 </label>
             </div>
@@ -73,7 +75,7 @@
         </div>
     </form>
 
-    <div class="large-10 columns">
+
         <h3>Your Contacts </h3>
         <table>
             <thead>
